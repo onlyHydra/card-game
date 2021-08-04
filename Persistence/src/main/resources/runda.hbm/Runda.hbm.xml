@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="runda.hbm">
+    <class name="domain.Runda"
+           table="Runde">
+        <id name="id" column="idRunda" type="integer">
+            <generator class="increment"/>
+        </id>
+        <property
+                type="string"
+                name="username"
+                column="username"/>
+        <property
+                type="string"
+                name="carteAleasa"
+                column="carteAleasa"/>
+        <property
+                type="integer"
+                name="nrRunda"
+                column="nrRunda"/>
+        <property
+                type="integer"
+                name="idJoc"
+                column="idJoc"/>
+        <property
+                type="integer"
+                name="nrCartiCastigate"
+                column="nrCartiCastigate"/>
+
+    </class>
+</hibernate-mapping>

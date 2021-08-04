@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="498.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="button" layoutX="422.0" layoutY="10.0" mnemonicParsing="false" onAction="#logOut" text="LOG OUT" />
+            <Button fx:id="btnStart" layoutX="14.0" layoutY="359.0" mnemonicParsing="false" onAction="#startJoc" prefHeight="27.0" prefWidth="191.0" text="START JOC" />
+            <Label layoutX="12.0" layoutY="6.0" text="You are playing against:" />
+            <TableView fx:id="tableViewCards" layoutX="194.0" layoutY="41.0" prefHeight="200.0" prefWidth="93.0">
+              <columns>
+                <TableColumn fx:id="tableColumnDenumire" prefWidth="92.0" text="Cards:" />
+              </columns>
+            </TableView>
+            <Label layoutX="179.0" layoutY="6.0" text="Your cards are:" />
+            <Button fx:id="butonAlege" layoutX="194.0" layoutY="257.0" mnemonicParsing="false" onAction="#carteAleasa" text="ALEGE CARTE" />
+            <ListView fx:id="listViewOpponents" layoutX="14.0" layoutY="41.0" prefHeight="200.0" prefWidth="130.0" />
+            <TextArea fx:id="textArea" layoutX="300.0" layoutY="95.0" prefHeight="146.0" prefWidth="181.0" />
+            <Label layoutX="300.0" layoutY="67.0" text="Rezumat runda:" />
+            <TextArea fx:id="textAreaEndGame" layoutX="300.0" layoutY="284.0" prefHeight="99.0" prefWidth="181.0" />
+            <Label layoutX="306.0" layoutY="262.0" text="Rezultate finale:" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
